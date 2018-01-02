@@ -16,10 +16,10 @@ namespace MusicSharp.Tests
         [InlineData(-1)]
         [InlineData(-.001)]
         [InlineData(-9999)]
-        public void InvalidFrequencies(double invalid1)
+        public void InvalidFrequencies(double invalidFreq)
         {
             Assert.Throws<InvalidFrequencyException>(() => 
-                new Frequency(invalid1));
+                new Frequency(invalidFreq));
         }
 
         [Theory]

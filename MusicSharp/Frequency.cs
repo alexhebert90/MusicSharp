@@ -19,7 +19,7 @@ namespace MusicSharp
         internal Frequency(double hertz)
         {
             // The only "invalid" frequency I can imagine is one that is negative.
-            // While there is an upper limit for human hearing, there is no absolute physical limit I'm aware of (besides infinite).
+            // While there is an upper limit for human hearing, there is no absolute physical limit I'm aware of (besides infinity).
             if(hertz < 0 || double.IsPositiveInfinity(hertz))
             {
                 throw new InvalidFrequencyException(hertz);
